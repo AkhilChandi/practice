@@ -1,0 +1,36 @@
+1.files retriever from 28 build
+2.maintaining a map for file retieval to kill it on new authentication
+3.changing blocmiss method from packetmissed(android catchers)
+4.added a break for thread in files retriever at(915,916)//three times in the same loop
+5.changed in closeSocket in rr datasender (tchnlProps.setTchnlObj(null); 329)
+6.writing interrupt in tcnltcp.close channel
+(if(!currentThread().isInterrupted()){
+                tlog.debug("interrupting current thread in tchnltcp :"+this.getId());
+                currentThread().interrupt();
+            })
+7.adding interrupt at invalid packet in device listner
+8.adding interrupt on exception in block missed method in device listner
+9.added interrupts in all while loops of fr thread and many in project
+#add isInterrupted condition while interrupting device listner thread
+10.added   catch (Exception ie) {
+            flog.debug("Stop to adding data into Queue");
+            MyProps.getTChannelPropsBean(catcherId).getTchnlObj().closeChannel();
+            //flog.error(ie, ie);
+            this.kill();
+            this.interrupt();
+        }                                in FILERETRIEVAL
+
+
+
+11 used close method instead of closeChannel in RR datasender
+12.used close() instead of closeChannel in tchannleTcp :line 381..
+
+
+
+#31 modifications
+=============================
+
+1.adding interrupt in tchannel tcp 656 657,658
+
+
+
