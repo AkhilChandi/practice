@@ -1,4 +1,4 @@
-1.files retriever from 28 build
+1.files retriever from 28
 2.maintaining a map for file retieval to kill it on new authentication
 3.changing blocmiss method from packetmissed(android catchers)
 4.added a break for thread in files retriever at(915,916)//three times in the same loop
