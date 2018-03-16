@@ -34,6 +34,14 @@ public class AbstractDataAccessObject implements AutoCloseable {
         return anyStmt != null && !anyStmt.isClosed();
     }
 
+jshackvs
+hbckasbc
+lkbcksabnc
+kbnsbckbnas
+kbcaskjcn
+bncbaskjcn
+kbcksajn
+
     @Override
     public void close() throws SQLException {
         if (con != null)
