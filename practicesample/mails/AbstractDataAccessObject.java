@@ -33,6 +33,18 @@ public class AbstractDataAccessObject implements AutoCloseable {
     protected boolean isOpened(Statement anyStmt) throws SQLException {
         return anyStmt != null && !anyStmt.isClosed();
     }
+    kjdnvnd,cml
+mcdcvlm;'c.
+clmdvm
+ncldmvlkdm
+mclkdmvkld,
+kcnlvn 
+mclskkmv
+cmdlkvm
+mcldmv
+lkcmadmv
+kmlkvm
+lkdvmdlskvm
 
     @Override
     public void close() throws SQLException {
